@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F1F5F9"
+    tools:context=".KaprodiActivity">
+
+    <!-- TextView: Nama User -->
+    <TextView
+        android:id="@+id/tvNamaUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Halo, Kaprodi 👋"
+        android:textSize="16sp"
+        android:textColor="#334155"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnLogout"
+        app:layout_constraintHorizontal_bias="0" />
+
+    <!-- Button: Logout -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="#FFFFFF"
+        android:minHeight="0dp"
+        app:layout_constraintTop_toTopOf="@id/tvNamaUser"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView: Judul -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Manajemen Mata Kuliah"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#0F172A"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button: Tambah Matkul -->
+    <Button
+        android:id="@+id/btnTambahMatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Matkul"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#22C55E"
+        android:elevation="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ScrollView: Daftar Matkul -->
+    <ScrollView
+        android:id="@+id/scrollMatkul"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnTambahMatkul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/matkulListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

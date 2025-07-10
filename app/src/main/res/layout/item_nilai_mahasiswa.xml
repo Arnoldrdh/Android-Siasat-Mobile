@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E8F0"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- Nama Mata Kuliah -->
+    <TextView
+        android:id="@+id/tvNamaMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pemrograman Vue"
+        android:textStyle="bold"
+        android:textColor="#0F172A" />
+
+    <!-- Dosen + SKS -->
+    <TextView
+        android:id="@+id/tvNimMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dosen: Evan Yu | 3 SKS"
+        android:textColor="#475569"
+        android:textSize="14sp" />
+
+    <!-- Nilai -->
+    <TextView
+        android:id="@+id/tvNilaiMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nilai: 90"
+        android:textColor="#1E3A8A"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

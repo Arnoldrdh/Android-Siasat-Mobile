@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E8F0"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvNamaMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Mahasiswa"
+        android:textStyle="bold"
+        android:textColor="#0F172A"/>
+
+    <TextView
+        android:id="@+id/tvNimMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIM Mahasiswa"
+        android:textColor="#475569"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/etNilaiMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai"
+        android:inputType="text"
+        android:backgroundTint="#CBD5E1"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
