@@ -7,7 +7,7 @@
     android:padding="16dp"
     android:background="#F1F5F9">
 
-    <!-- Guideline untuk memberi jarak atas (10% dari tinggi layar) -->
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/topGuide"
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1" />
 
-    <!-- Tombol Back, diatur supaya tidak nempel ke atas -->
+
     <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Judul halaman, posisinya mengikuti tombol kembali -->
+
     <TextView
         android:id="@+id/tvJudulMatkul"
         android:layout_width="0dp"
@@ -43,7 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- ScrollView di tengah layout, supaya daftar mahasiswa bisa discroll -->
+
     <ScrollView
         android:id="@+id/scrollMahasiswa"
         android:layout_width="0dp"
@@ -63,7 +63,7 @@
             android:paddingBottom="24dp" />
     </ScrollView>
 
-    <!-- Tombol Simpan Nilai, ditaruh di bagian bawah -->
+
     <Button
         android:id="@+id/btnSimpanNilai"
         android:layout_width="0dp"
